@@ -1,49 +1,105 @@
+/* Reset some defaults */
+body, input, button, select {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f8ff;
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-}
-.container {
-  background: white;
+  background: #f6f8fa;
   padding: 30px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
 h1 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #222;
 }
-form label {
+
+/* Form labels and inputs */
+label {
   display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+input[type="file"] {
+  border: 2px dashed #ccc;
+}
+
+/* Share Button */
+#shareBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  border: none;
+  padding: 10px 18px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+}
+
+#shareBtn:hover {
+  background-color: #1ebe5a;
+}
+
+/* Click Counter */
+#clickCounter {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Submit Button */
+#submitBtn {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   margin-top: 15px;
 }
-input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+
+#submitBtn:hover {
+  background-color: #0056c7;
 }
-.share-section {
-  margin: 20px 0;
-}
-#submitBtn, #shareBtn {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  border: none;
-  width: 100%;
+
+/* Confirmation Message */
+#confirmation {
   margin-top: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-#submitBtn:disabled {
-  background-color: grey;
-  cursor: not-allowed;
-}
-#message {
-  margin-top: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  color: green;
   text-align: center;
 }
