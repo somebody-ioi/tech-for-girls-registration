@@ -52,8 +52,7 @@ This is a simple yet fully functional registration website created as part of th
 
 ## 🌐 Live Link
 
-[Click here to view the live website]([https://your-username.github.io/tech-for-girls-registration/](https://somebody-ioi.github.io/tech-for-girls-registration/))  
-*(replace with actual link once it’s active)*
+https://somebody-ioi.github.io/tech-for-girls-registration/
 
 ---
 
