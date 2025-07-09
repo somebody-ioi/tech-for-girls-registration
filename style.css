@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+}
+form label {
+  display: block;
+  margin-top: 15px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+.share-section {
+  margin: 20px 0;
+}
+#submitBtn, #shareBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#submitBtn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
